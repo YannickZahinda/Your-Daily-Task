@@ -1,93 +1,76 @@
 # Your Daily Tasks
 
-A modern, responsive Task Manager (TODO app) built with React, TypeScript, and Tailwind CSS, following a provided design and best practices in frontend architecture, testing, and tooling.
+A modern, responsive Task Manager (TODO app) built with **React**, **TypeScript**, and **Tailwind CSS**, following a provided design and best practices in frontend architecture, testing, and tooling.
 
 This project was built as part of a technical assessment to demonstrate:
 
-UI/UX implementation skills
+- UI/UX implementation skills
+- React + TypeScript mastery
+- State management and data fetching
+- Testing strategy
+- Code structure and maintainability
 
-React + TypeScript mastery
+---
 
-State management and data fetching
+## ✨ Features
 
-Testing strategy
+- 📋 **Full CRUD operations for tasks** (Create, Read, Update, Delete) — fully functional via the DummyJSON API  
+- 🌗 **Dark / Light theme** with smooth transitions  
+- 🌍 **Internationalization (i18n)** support
+  - English 🇬🇧
+  - French 🇫🇷
+- ✅ **Task progress tracking** (mark tasks as done)
+- 📱 **Fully responsive UI**, faithful to the provided design
+- ⚡ Optimistic updates and proper loading states
+- 🧪 **Unit & component tests** using Jest + React Testing Library
+- 🔁 **API integration** using [DummyJSON Todos API](https://dummyjson.com/docs/todos)
+- 🚀 **CI pipeline** running tests on Pull Requests
 
-Code structure and maintainability
+**Coming soon in the sidebar:** Dashboard, Search, Inbox, Calendar, and additional features.
 
-✨ Features
+---
 
-📋 Full CRUD operations for tasks (Create, Read, Update, Delete)
+## 🧱 Tech Stack
 
-🌗 Dark / Light theme with smooth transitions
+- React 18 + TypeScript  
+- Vite for fast builds and DX  
+- Tailwind CSS for styling  
+- TanStack Query (React Query) for server-state management  
+- Zustand for client-side state management  
+- React Router for routing  
+- TanStack Table for task listing  
+- Jest & React Testing Library for testing  
+- GitHub Actions for CI  
+- Shadcn-inspired UI patterns for accessibility and reusability  
 
-🌍 Internationalization (i18n) support
+---
 
-English 🇬🇧
+## 🔌 API
 
-French 🇫🇷
+All CRUD operations are handled using the **DummyJSON Todos API**:
 
-📱 Fully responsive UI, faithful to the provided design
+**Endpoints used:**
 
-⚡ Optimistic updates and proper loading states
+- Fetch todos: `GET /todos?limit=30`  
+- Create todo: `POST /todos/add`  
+- Update todo: `PUT /todos/{id}`  
+- Delete todo: `DELETE /todos/{id}`
 
-🧪 Unit & component tests using Jest + React Testing Library
+---
 
-🔁 API integration using a dummy todo API
+## 🧪 Testing
 
-🚀 CI pipeline running tests on Pull Requests
+Includes:
 
-🧱 Tech Stack
+- Unit tests for API logic  
+- Component tests for key UI elements  
+- Tests focused on behavior, not implementation details  
 
-React 18 + TypeScript
+**Run tests locally:**
+```bash
+npm run test 
+```
 
-Vite for fast builds and DX
-
-Tailwind CSS for styling
-
-TanStack Query (React Query) for server-state management
-
-Zustand for client-side state management
-
-React Router for routing
-
-TanStack Table for task listing
-
-Jest & React Testing Library for testing
-
-GitHub Actions for CI
-
-UI components are built with accessibility and reusability in mind.
-Shadcn-inspired patterns are used where relevant.
-
-🔌 API
-
-All CRUD operations are handled using the DummyJSON Todos API:
-
-🔗 https://dummyjson.com/docs/todos
-
-Endpoints used:
-
-Fetch todos
-
-Create todo
-
-Update todo
-
-Delete todo
-
-🧪 Testing
-
-The project includes:
-
-Unit tests for API logic
-
-Component tests for key UI elements
-
-Tests focused on behavior, not implementation details
-
-Run tests locally:
-
-npm run test
 
 🔁 Continuous Integration
 
@@ -99,32 +82,26 @@ Prevent merging if tests fail
 
 🚀 Deployment
 
-The application can be deployed on Netlify (or similar platforms).
+[ Live Demo](https://your-daily-task.netlify.app/)
 
-Build command
+Build command:
+
 npm run build
 
-Preview production build
-npm run preview
+# Installation
 
-🛠️ Local Development
-Prerequisites
+git clone https://github.com/YannickZahinda/Your-Daily-Task
 
-Node.js ≥ 18
-
-npm
-
-Installation
-git clone https://github.com/<your-username>/your-daily-tasks.git
 cd your-daily-tasks
+
 npm install
 
-Run the app
+Run the app locally
+
 npm run dev
 
 
 The app will be available at:
-
 http://localhost:8080
 
 📁 Project Structure (simplified)
